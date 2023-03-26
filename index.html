@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Check Name</title>
+</head>
+<body>
+	<h1>Enter your name to see your picture in 4k : </h1>
+	<form>
+		<input type="text" id="name" name="name">
+		<button type="button" onclick="checkName()">Submit</button>
+	</form>
+	
+
+   <style>
+      body{
+        text-align: center;
+        margin-top: 10%;
+        background-color: white;
+      }
+      h3{
+        margin-left: 25%;
+      }
+   </style>
+
+	<script>
+		function checkName() {
+			var nameInput = document.getElementById("name");
+			var name = nameInput.value.toLowerCase();
+			if (name === "gayani") {
+				window.location.href = "./moon.html";
+			} else {
+				alert("Sorry, your name isn't authorized to access this.");
+			}
+			nameInput.value = "";
+		}
+	</script>
+
+
+<footer> <h3>~ Made by Padi Akhil</h3>  </footer>
+
+ 
+
+</body>
+</html>
